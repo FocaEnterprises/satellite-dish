@@ -6,6 +6,12 @@
   "author": "giverplay",
   "license": "GPL-3.0-only",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.2"
   }
 }
